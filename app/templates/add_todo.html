@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}Add Todo{% endblock %}
+
+{% block content %}
+<h2 class="ui dividing header">Add Todo</h2>
+<form class="ui form" action="{{ url_for('add_todo') }}" method="post">
+    <div class="field">
+        <label for="title">Title</label>
+        <input type="text" id="title" name="title" required>
+    </div>
+    <button type="submit" class="ui primary button">Add</button>
+</form>
+{% endblock %}

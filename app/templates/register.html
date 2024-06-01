@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}Register{% endblock %}
+
+{% block content %}
+<h2 class="ui dividing header">Register</h2>
+<form class="ui form" action="{{ url_for('register') }}" method="post">
+    <div class="field">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required>
+    </div>
+    <div class="field">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+    </div>
+    <button type="submit" class="ui primary button">Register</button>
+</form>
+{% endblock %}

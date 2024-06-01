@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}Todo List{% endblock %}
+
+{% block content %}
+<h2 class="ui dividing header">Todo List</h2>
+<a href="{{ url_for('add_todo') }}" class="ui primary button mb-3">Add Todo</a>
+<div class="ui divided list">
+    {% for todo in todos %}
+    <div class="item">
+        <div class="right floated content">
+            <a href="{{ url_for('complete_todo', todo_id=todo.id) }}" class="ui mini button">
+                {% if todo.completed %}Undo{% else %}Complete{% endif %}
+            </a>
+            <a href="{{ url_for('delete_todo', todo_id=todo.id) }}" class="ui mini button red">Delete</a>
+        </div>
+        <div class="content">
+            <div class="header">{{ todo.title }}</div>
+            <div class="description">{{ todo.description }}</div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

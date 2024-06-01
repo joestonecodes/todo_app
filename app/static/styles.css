@@ -1,0 +1,61 @@
+/* app/static/styles.css */
+
+/* General body background */
+body {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Navbar background and text colors */
+.ui.menu {
+    background-color: #3a3a3a;
+    color: white;
+}
+
+.ui.menu a.item {
+    color: white;
+}
+
+.ui.menu a.item:hover {
+    background-color: #555;
+}
+
+/* Button colors */
+.ui.primary.button {
+    background-color: #4a4a4a;
+    color: white;
+}
+
+.ui.primary.button:hover {
+    background-color: #5a5a5a;
+}
+
+.ui.button {
+    background-color: #7a7a7a;
+    color: white;
+}
+
+.ui.button:hover {
+    background-color: #8a8a8a;
+}
+
+/* Segment and header colors */
+.ui.segment {
+    background-color: #e0e0e0;
+    border-color: #d0d0d0;
+}
+
+.ui.header {
+    color: #4a4a4a;
+}
+
+/* Message colors */
+.ui.message {
+    background-color: #f9f9f9;
+    border-color: #c0c0c0;
+}
+
+/* List item colors */
+.ui.list .item {
+    color: #333;
+}
